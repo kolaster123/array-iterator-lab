@@ -231,3 +231,42 @@ let isEveryone19OrOlder = devs.every(dev => (new Date().getFullYear() - dev.year
 // Check your return value:
 console.log('Exercise 7 My Result: ', isEveryone19OrOlder)
 console.log('Exercise 7 Correct Result: ', false)
+
+// Array.prototype.find()
+
+// 8. Use Array.prototype.find() to identify and retrieve the comment object with a specific ID 823423 from an array of comment objects.
+
+// - Assign the found comment object to the variable 'commentById'.
+
+
+let commentById = [
+  { text: 'Love this!', id: 523423 },
+  { text: 'Super good', id: 823423 },
+  { text: 'You are the best', id: 2039842 },
+  { text: 'Ramen is my fav food ever', id: 123523 },
+  { text: 'Nice Nice Nice!', id: 542328 }
+];
+
+// Enter your solution code here:
+
+
+
+// Check your return value:
+console.log('Exercise 8 My Result: ', commentById)
+console.log('Exercise 8 Correct Result: ', { text: 'Super good', id: 823423 })
+
+// Array.prototype.findIndex()
+
+// 9. Determine the index of the comment that has a specific ID 123523 in an array of comment objects.
+
+// - Store the index in the variable 'idx'.
+
+let idx = comments.findIndex(comment => comment.id === 123523);
+
+// Enter your solution code here:
+
+
+
+// Check your return value:
+console.log('Exercise 9 My Result: ', idx)
+console.log('Exercise 9 Correct Result: ', 3)
